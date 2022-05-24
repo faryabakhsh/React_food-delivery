@@ -1,0 +1,43 @@
+.form {
+  float: left;
+    text-align: right;
+  }
+  
+  .form button {
+    font: inherit;
+    cursor: pointer;
+    background-color: #582174;
+    border: 1px solid #582174;
+    color: white;
+    padding: 0.25rem 2rem;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+  
+  .form button:hover,
+  .form button:active {
+    background-color: #582174;
+    border-color: #582174;
+  }
+
+
+.addtocart {
+  margin-left: 30px;
+    background: #660066;
+    width: 20px;
+    height: 20px;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+  }
+  
+  
+  .addtocart .MuiSvgIcon-root {
+    float: left;
+    color: #faf9fb;
+    font-size: 16px;
+    
+  }
