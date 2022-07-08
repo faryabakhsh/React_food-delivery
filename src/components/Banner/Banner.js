@@ -1,5 +1,7 @@
 import React from 'react'
 import './Banner.css';
+import { Link } from "react-router-dom";
+import Seller from '../Seller/Seller';
 
 function Banner() {
   return (
@@ -9,7 +11,11 @@ function Banner() {
             <h3 className='h3'>
                 Sell your food items by clicking here
             </h3>
-            <a href ="" className='a'>Learn More</a>
+            <Link to ="/seller" className='a'>
+              <button>
+              Learn More
+              </button>
+              </Link>
         </div>
      
     </div>

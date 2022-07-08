@@ -10,6 +10,8 @@ import Category from "./components/Category/Category";
 import CompleteMeals from "./components/CompleteMeals/CompleteMeals";
 import Cart from "./components/Cart/Cart";
 import CartProvider from "./store/CartProvider";
+import Seller from "./components/Seller/Seller";
+import {Route} from "react-router-dom";
 
 
 
@@ -27,7 +29,9 @@ const hideCartHandler = () => {
 };
   
   return (
+   <div>
     <CartProvider>
+    <Route path='/' exact>
     <div className="App">
       {cartIsShown && <Cart onClose={hideCartHandler}/>}
       <Header onShowCart={showCartHandler} />
@@ -58,8 +62,20 @@ const hideCartHandler = () => {
           
         </ul>
       </div>  
+
+      
     </div>
+    </Route>
     </CartProvider>
+
+<div>
+<Route path="/seller">
+  <Seller />
+</Route>
+</div>
+
+</div>
+
   );
 }
 
